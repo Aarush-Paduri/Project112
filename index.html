@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>GESTURE WEB APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+    
+      <center>
+        <h1 class="btn btn-info heading">
+        GESTURE WEB APP
+          <br>
+          <span>&#128076;</span>
+          <span>&#128077;</span>
+          <span>&#9996;</span>
+          <span>&#9994;</span>
+          <span>&#128079;</span>
+          <span>&#129304;</span>
+        </h1>
+        <br><br>
+        <p style="font-size: 22px; color: white;">Take a selfie of a gesture to know about its meaning.</p>
+        <br>
+        <p style="font-size: 18px; color: white;">On the following gestures the model is trained - </p>
+        <br>
+        <div>
+        <span>&#128076;</span>
+        <span class="white">|</span>
+        <span>&#128077;</span>
+        <span class="white">|</span>
+        <span>&#9996;</span>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <p class="webcams">WEBCAM VIEW -</p>
+          <div id="camera"></div>
+          <br><br>
+          <button class="image_capture btn btn-info" onclick="capture()">CAPTURE IMAGE</button>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <p class="prediction">Prediction -</p>
+        <p class="prediction" id="label"></p>
+        <p class="prediction" id="accuracy"></p>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <p class="webcams">SNAPSHOT -</p>
+          <div id="snapshot"></div>
+          <br><br>
+          <button class="image_capture btn btn-success" onclick="identify()">IDENTIFY GESTURE</button>
+        </div>
+
+        <script src="main.js"></script>
+        
+</html>

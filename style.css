@@ -1,0 +1,24 @@
+.heading {
+    width: 300px;
+    letter-spacing: 10px;
+}
+
+body {
+    background-color:lightgreen;
+}
+
+.white {
+    color: white;
+    font-weight: bolder;
+}
+
+#camera, #snapshot {
+    border: 2px dashed white;
+    width: 350px;
+    height: 300px;
+}
+
+.webcams, .prediction {
+    background-color: white;
+    color: green;
+}
